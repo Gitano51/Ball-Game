@@ -5,6 +5,6 @@ var _view_yview = camera_get_view_y(view_camera[0])
 draw_set_color(c_blue)
 draw_text(_view_xview, _view_yview, x)
 draw_text(_view_xview, _view_yview + 32, y)
-
+draw_text(_view_xview, _view_yview + 64, obj_character.current_buffer_jump_frames)
 
 
