@@ -1,0 +1,23 @@
+# Cache y temporales de GameMaker
+.cache/
+Temp/
+*.lock
+
+# Archivos de build
+build/
+output/
+
+# IDE local settings
+*.yyp.bak
+*.yyz
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Mac
+.DS_Store
+
+# Archivos de licencia local
+license.plist
+um.json
