@@ -4,16 +4,17 @@
   "name": "obj_character",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "character",
-    "path": "folders/Objects/character.yy",
+    "path": "folders/Objects/entities/character.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_playable_entity",
+    "path": "objects/obj_playable_entity/obj_playable_entity.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

@@ -1,7 +1,7 @@
 /// @description Player Actions
 var _key_move = obj_input_controller.is_action_right_checked - obj_input_controller.is_action_left_checked;
-var _key_jump = obj_input_controller.is_action_up_pressed || obj_input_controller.is_action_jump_pressed;
-var _key_jump_released = obj_input_controller.is_action_up_released || obj_input_controller.is_action_jump_released;
+var _key_jump = obj_input_controller.is_jump_pressed;
+var _key_jump_released = obj_input_controller.is_jump_released;
 
 var _is_in_ground = place_meeting(x, y+1, my_tilemap);
 

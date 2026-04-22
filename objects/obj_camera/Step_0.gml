@@ -1,10 +1,10 @@
 /// @description Camera Behaviour
-if (instance_exists(obj_character)) {
-    var _char_pos_x = obj_character.x;
-    var _char_pos_y = obj_character.y;
+if (instance_exists(obj_playable_entity)) {
+    var _char_pos_x = obj_playable_entity.x;
+    var _char_pos_y = obj_playable_entity.y;
     
-    var _char_movement_x = sign(obj_character.move_x);
-    var _char_movement_y = sign(obj_character.move_y);
+    var _char_movement_x = sign(obj_playable_entity.move_x);
+    var _char_movement_y = sign(obj_playable_entity.move_y);
     
     last_camera_direction_x = _char_movement_x != 0 ? _char_movement_x : last_camera_direction_x;
     last_camera_direction_y = _char_movement_y != 0 ? _char_movement_y : last_camera_direction_y;

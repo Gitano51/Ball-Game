@@ -5,6 +5,7 @@ default_key_up = vk_up;
 default_key_down = vk_down;
 default_key_jump = vk_space;
 
+//Using default keys as actions
 action_right = default_key_right;
 action_left = default_key_left;
 action_up = default_key_up;
@@ -23,3 +24,6 @@ is_action_jump_pressed = false;
 
 is_action_up_released = false;
 is_action_jump_released = false;
+
+is_jump_pressed = false;
+is_jump_released = false;

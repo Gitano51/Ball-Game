@@ -5,7 +5,8 @@
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
     {"name":"Notes","order":13,"path":"folders/Notes.yy",},
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
-    {"name":"character","order":1,"path":"folders/Objects/character.yy",},
+    {"name":"entities","order":1,"path":"folders/Objects/entities.yy",},
+    {"name":"controllers","order":3,"path":"folders/Objects/controllers.yy",},
     {"name":"gui","order":2,"path":"folders/Objects/gui.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
@@ -20,9 +21,11 @@
     {"name":"tileset","order":2,"path":"folders/Sprites/tileset.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"controllers","order":3,"path":"folders/Objects/controllers.yy",},
+    {"name":"character","order":1,"path":"folders/Objects/entities/character.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_input_controller","order":1,"path":"objects/obj_input_controller/obj_input_controller.yy",},
+    {"name":"obj_playable_entity","order":3,"path":"objects/obj_playable_entity/obj_playable_entity.yy",},
+    {"name":"obj_base_entity","order":2,"path":"objects/obj_base_entity/obj_base_entity.yy",},
   ],
 }
