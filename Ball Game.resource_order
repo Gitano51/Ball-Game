@@ -20,6 +20,9 @@
     {"name":"tileset","order":2,"path":"folders/Sprites/tileset.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"controllers","order":3,"path":"folders/Objects/controllers.yy",},
   ],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"obj_input_controller","order":1,"path":"objects/obj_input_controller/obj_input_controller.yy",},
+  ],
 }

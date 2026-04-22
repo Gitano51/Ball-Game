@@ -1,7 +1,4 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_move_entity() {
-    
     var _steps_x = abs(move_x);
     var _dir_x = sign(move_x);
 	var _slope_steps = 0;
@@ -35,8 +32,30 @@ function scr_move_entity() {
         if (!place_meeting(x, y + _dir_y, my_tilemap))
             y += _dir_y;
         else {
-            move_y = 0;
-            break;
+            if (_dir_y == -1) {
+                var _corrected = false;
+                for (var _offset = 1; _offset <= head_bump_correction_pixels; _offset++) {
+                    if (!place_meeting(x + _offset, y + _dir_y, my_tilemap)) {
+                        x += _offset;
+                        y += _dir_y;
+                        _corrected = true;
+                        break;
+                    }
+                    if (!place_meeting(x - _offset, y + _dir_y, my_tilemap)) {
+                        x -= _offset;
+                        y += _dir_y;
+                        _corrected = true;
+                        break;
+                    }
+                }
+                if (!_corrected) {
+                    move_y = 0;
+                    break;
+                }
+            } else {
+                move_y = 0;
+                break;
+            }
         }
     }
 }
