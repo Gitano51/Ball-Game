@@ -16,4 +16,3 @@ head_bump_correction_pixels = 0;
 
 //Tilemap ids
 my_tilemap = layer_tilemap_get_id("Tilesets");
-oneway_tile_index = 4; //OJO: ESTO PUEDE SER QUE SEA MODIFICABLE SEGUN TILE
