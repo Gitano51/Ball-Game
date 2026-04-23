@@ -2,8 +2,9 @@
 var _key_move = obj_input_controller.is_action_right_checked - obj_input_controller.is_action_left_checked;
 var _key_jump = obj_input_controller.is_jump_pressed;
 var _key_jump_released = obj_input_controller.is_jump_released;
+var _key_down = obj_input_controller.is_action_down_pressed;
 
-var _is_in_ground = place_meeting(x, y+1, my_tilemap);
+var _is_in_ground = place_meeting(x, y+1, my_tilemap)
 
 if (_key_jump && current_buffer_jump_frames == 0)
     current_buffer_jump_frames = buffer_jump_frames;
@@ -18,6 +19,8 @@ var _hor_speed = _is_in_ground ? character_ground_speed : character_air_speed;
 move_x = _hor_speed * _key_move;
 
 move_y = _is_free ? min(move_y + character_gravity, character_max_fall_speed) : 0;
+if (!_is_in_ground && _key_down && move_y > 0)
+	move_y = character_max_fall_speed
 
 if (_can_jump) {
     move_y = -character_jump_force;

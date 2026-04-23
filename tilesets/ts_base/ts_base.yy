@@ -1,7 +1,7 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "TileSet1",
+  "name": "ts_base",
   "autoTileSets": [],
   "macroPageTiles": {
     "SerialiseHeight": 0,
@@ -24,13 +24,14 @@
     "name": "Default",
     "path": "texturegroups/Default",
   },
-  "tile_count": 4,
+  "tile_count": 5,
   "tileAnimation": {
     "FrameData": [
       0,
       1,
       2,
       3,
+      4,
     ],
     "SerialiseFrameCount": 1,
   },
