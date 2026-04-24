@@ -40,18 +40,7 @@ function scr_move_entity() {
 		
 		//Position fix on semi solid
 		if (_dir_y > 0) {
-	        var _olist = ds_list_create();
-	        var _osize = instance_place_list(x, y + _dir_y, obj_semisolid_mask, _olist, false);
-	        var _hit = noone;
-        
-	        for (var _oi = 0; _oi < _osize; _oi++) {
-	            var _oinst = _olist[| _oi];
-	            if (bbox_bottom <= _oinst.bbox_top) {
-	                _hit = _oinst;
-	                break;
-	            }
-	        }
-	        ds_list_destroy(_olist);
+	        _hit = scr_get_semisolid_platform()
         
 	        if (_hit != noone) {
 	            y = _hit.bbox_top - (bbox_bottom - y);
