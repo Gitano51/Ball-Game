@@ -15,4 +15,4 @@ move_y = 0;
 head_bump_correction_pixels = 0;
 
 //Tilemap ids
-my_tilemap = layer_tilemap_get_id("Tilesets");
+base_tilemap = layer_tilemap_get_id("Tilesets");

@@ -9,10 +9,12 @@
     {"name":"entities","order":1,"path":"folders/Objects/entities.yy",},
     {"name":"character","order":1,"path":"folders/Objects/entities/character.yy",},
     {"name":"gui","order":2,"path":"folders/Objects/gui.yy",},
+    {"name":"masks","order":4,"path":"folders/Objects/masks.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
     {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
+    {"name":"collisions","order":2,"path":"folders/Scripts/collisions.yy",},
     {"name":"movement","order":1,"path":"folders/Scripts/movement.yy",},
     {"name":"Sequences","order":11,"path":"folders/Sequences.yy",},
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},
@@ -26,6 +28,7 @@
   "ResourceOrderSettings": [
     {"name":"obj_input_controller","order":1,"path":"objects/obj_input_controller/obj_input_controller.yy",},
     {"name":"obj_playable_entity","order":3,"path":"objects/obj_playable_entity/obj_playable_entity.yy",},
+    {"name":"spr_semisolid_block","order":1,"path":"sprites/spr_semisolid_block/spr_semisolid_block.yy",},
     {"name":"obj_base_entity","order":2,"path":"objects/obj_base_entity/obj_base_entity.yy",},
   ],
 }
